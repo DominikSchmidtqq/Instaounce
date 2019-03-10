@@ -1,19 +1,23 @@
 
 import React, {Component} from 'react';
 import { Image, Text, StyleSheet, View, Dimensions, TouchableOpacity} from 'react-native';
-import config from "./config"
-import {PostFeed} from "./Src/Components/Container"
-import Instaounce from "./Src/Instaounce";
+import config from "../config"
+import {PostFeed} from "./Components/Container"
 
-export default class App extends Component {
+class Instaounce extends Component {
 
 
 
     render() {
         return (
             <View style={styles.container} >
-                <Instaounce/>
+                <View style = {{flex: 1, width: 100 + "%", height: 100 + "%"}}/>
+                <View style = {styles.topBar}>
+                    <Text style = {styles.topLogo}>Instaounce</Text>
+                    <PostFeed />
                 </View>
+
+            </View>
         );
     }
 }
@@ -83,3 +87,5 @@ const styles = StyleSheet.create({
 
     }
 });
+
+export default Instaounce;
