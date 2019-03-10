@@ -10,14 +10,13 @@ class Instaounce extends Component {
 
     render() {
         return (
-            <View style={styles.container} >
-                <View style = {{flex: 1, width: 100 + "%", height: 100 + "%"}}/>
+
+                <View style = {{flex: 1, width: "100%", height: "100%"}}>
                 <View style = {styles.topBar}>
                     <Text style = {styles.topLogo}>Instaounce</Text>
-                    <PostFeed />
+                        <PostFeed />
+                    </View>
                 </View>
-
-            </View>
         );
     }
 }

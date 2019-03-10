@@ -23,7 +23,7 @@ class Post extends Component {
         const imageURI = "https://sludgefeed.com/wp-content/uploads/2018/09/dogecoin-happy-doge-696x435.jpg"
         const likeIconColor = (this.state.liked) ?  "rgb(250,60,25)" : "rgb(0,0,0)";
         return (
-            <View>
+            <View style = {{flexDirection: "column", flex: 1, width: "100%"}}>
                 <View style = {styles.userBar}>
                     <View style = {{flexDirection: "row", alignItems: "center"}}>
                         <Image style = {styles.topBarProfilePicture} source = {{uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Lil_Pump%27s_mugshot.jpg/220px-Lil_Pump%27s_mugshot.jpg"}}/>
@@ -121,7 +121,6 @@ const styles = StyleSheet.create({
     feedText: {
         color: "rgb(0, 0, 0)",
         fontSize: 16,
-
     }
 });
 

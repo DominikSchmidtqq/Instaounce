@@ -4,6 +4,7 @@ import { Image, Text, StyleSheet, View, Dimensions, TouchableOpacity} from 'reac
 import config from "./config"
 import {PostFeed} from "./Src/Components/Container"
 import Instaounce from "./Src/Instaounce";
+import {Post} from "./Src/Components/Presentation"
 
 export default class App extends Component {
 
@@ -13,13 +14,14 @@ export default class App extends Component {
         return (
             <View style={styles.container} >
                 <Instaounce/>
-                </View>
+            </View>
         );
     }
 }
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F5FCFF',
