@@ -5,6 +5,6 @@ export default {
         shareIcon: require("../assets/icons/share_icon.png")
     },
     styleConstants: {
-        rowHeight: 60
+        rowHeight: 50
     }
 };
